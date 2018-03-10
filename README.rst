@@ -22,7 +22,7 @@ Getting Started
 
 2. **Installation:**
    ```bash
-   git clone https://github.com/yourusername/guacamole-web-client.git
+   git clone https://github.com/despicableGruu/guacamole-web-client.git
    cd guacamole-web-client
    pip install -r requirements.txt
    ```
