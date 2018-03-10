@@ -1,35 +1,60 @@
-=======================
-guacamole-django-client
-=======================
+Guacamole Web Client
+====================
 
-A django project, python version of project guacamole-client, for communication with `Guacamole <http://guac-dev.org/>`_ server (guacd)
+A modern web-based client for interacting with Guacamole servers. This project aims to provide a user-friendly and feature-rich interface for accessing remote desktops, applications, and other resources via the Guacamole protocol.
 
-Support Python 2.7
+Features
+--------
 
-Installation
-============
+* **Web-based interface:** Access your remote resources from any device with a web browser.
+* **Intuitive design:** Easy-to-use interface with a focus on simplicity and usability.
+* **Guacamole compatibility:** Works seamlessly with any Guacamole server (guacd).
+* **Security-focused:** Built with security in mind to protect your connections.
+* **Extensible architecture:** Designed to be easily extended and customized.
 
-After cloning the project, run:
+Getting Started
+---------------
 
-    $ pip install -r requirement.txt
+1. **Prerequisites:**
+   * Python 3.7 or higher
+   * A Guacamole server (guacd)
+   * A web server (e.g., Nginx, Apache)
 
-    $ python manage.py runserver
+2. **Installation:**
+   ```bash
+   git clone https://github.com/yourusername/guacamole-web-client.git
+   cd guacamole-web-client
+   pip install -r requirements.txt
+   ```
 
+3. **Configuration:**
+   * Configure your Guacamole server connection details in `settings.py`.
+   * Customize the appearance and functionality in `templates` and `static` directories.
 
-Configuration
-=============
+4. **Run the development server:**
+   ```bash
+   python manage.py runserver 0.0.0.0:8000
+   ```
 
-...
+5. **Deploy to production:**
+   * Follow the instructions in the `Deployment` section.
 
+Deployment
+----------
 
+To deploy your Guacamole Web Client to production, you will need to configure a web server to serve static files and proxy requests to your Django application. Refer to the documentation of your chosen web server for specific instructions.
 
-Development
-===========
+Contributing
+------------
 
-Please refer to `Official guacamole document <http://guacamole.incubator.apache.org/doc/0.9.13-incubating/gug/>`_
+If you'd like to contribute to the project, please fork the repository and submit a pull request.  
 
+License
+-------
 
-Notes
-=====
+This project is licensed under the MIT License.  Please refer to the `LICENSE` file for details.
 
-guacamole-django-client is licensed under the `Apache License 2.0 <https://github.com/heisaman/guacamole-django-client/blob/master/LICENSE>`_ and is based on efforts by Rescale `django-guacamole <https://github.com/rescale/django-guacamole>`_ project and Mohab Usama `pyguacamole <https://github.com/mohabusama/pyguacamole>`_ project.
+Acknowledgements
+----------------
+
+This project was inspired by various existing Guacamole clients, particularly the `guacamole-client` project.
